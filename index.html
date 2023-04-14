@@ -404,179 +404,193 @@
       </footer>
 
       <!-- modal #buynow -->
-      <div class="popup popup--nojs" id="buynow">
-        <div class="popup__modal">
-          <h2 class="popup__title">Buy now</h2>
-          <button class="popup__close close-modal" type="button">
-            <span class="visually-hidden">Close modal window</span>
-          </button>
-          <ul class="popup__order-list order-list">
-            <li class="order-list__item order-card order-card--icecream">
-              <div class="order-card__img-wrapper medalion medalion--icecream">
-                <picture class="medalion__img">
-                  <img src="images/products/ice-cream.png" srcset="images/products/ice-cream@2x.png 2x" alt="Ice cream"
-                    width="132" height="132">
-                </picture>
-              </div>
-              <h3 class="order-card__title">ice cream</h3>
-            </li>
-            <li class="order-list__item order-card order-card--icecoffee">
-              <div class="order-card__img-wrapper medalion medalion--icecoffee">
-                <picture class="medalion__img">
-                  <img src="images/products/ice-coffee.png" srcset="images/products/ice-coffee@2x.png 2x" alt="Ice coffee"
-                    width="132" height="132">
-                </picture>
-              </div>
-              <h3 class="order-card__title">ice coffee</h3>
-            </li>
-            <li class="order-list__item order-card order-card--milkshakes">
-              <div class="order-card__img-wrapper medalion medalion--milkshakes">
-                <picture class="medalion__img">
-                  <img src="images/products/milkshakes.png" srcset="images/products/milkshakes@2x.png 2x" alt="Milkshakes"
-                    width="132" height="132">
-                </picture>
-              </div>
-              <h3 class="order-card__title">milkshakes</h3>
-            </li>
-          </ul>
-
-          <form action="#" method="post" class="popup__form form">
-            <label for="name" class="visually-hidden">Your name</label>
-            <input class="form__field" type="text" name="name" id="name" placeholder="Name">
-            <label for="phone" class="visually-hidden">Your phone</label>
-            <input class="form__field" type="text" name="phone" id="phone" placeholder="Phone" required>
-            <label for="comment" class="visually-hidden">Your comment</label>
-            <textarea class="form__field form__field--area" name="comment" id="comment" placeholder="Comment"></textarea>
-            <button class="popup__btn button" type="submit">Submit</button>
-          </form>
-        </div>
-      </div>
-
-      <!-- modal #icecream -->
-      <div class="popup popup--nojs" id="icecream">
-        <div class="popup__modal popup__modal--ingredients">
-          <h2 class="popup__title popup__title--mb24 popup__title--ingredients">Chololate icecream</h2>
-          <button class="popup__close popup__close--ingredients close-modal close-modal--ingredients" type="button">
-            <span class="visually-hidden">Close modal window</span>
-          </button>
-          <div class="popup__medalion medalion medalion--icecream">
+  <div class="popup popup--nojs" id="buynow">
+    <div class="popup__modal">
+      <h2 class="popup__title">Buy now</h2>
+      <button class="popup__close close-modal" type="button">
+        <span class="visually-hidden">Close modal window</span>
+        <svg class="close-svg" width="12" height="12" focusable="false" aria-hidden="true">
+          <use xlink:href="images/sprites.svg#close"></use>
+        </svg>
+      </button>
+      <ul class="popup__order-list order-list">
+        <li class="order-list__item order-card order-card--icecream">
+          <div class="order-card__img-wrapper medalion medalion--icecream">
             <picture class="medalion__img">
-              <img src="images/products/chocolate-icecream.jpg" srcset="images/products/chocolate-icecream@2x.jpg 2x"
-                alt="Chololate ice-cream" width="131" height="131">
+              <img src="images/products/ice-cream.png" srcset="images/products/ice-cream@2x.png 2x" alt="Ice cream"
+                width="132" height="132">
             </picture>
           </div>
-
-          <dl class="popup__food-values food-values">
-            <div class="food-values__item">
-              <dt class="food-values__digit">320</dt>
-              <dd class="food-values__name">kcal</dd>
-            </div>
-            <div class="food-values__item">
-              <dt class="food-values__digit">4g</dt>
-              <dd class="food-values__name">Prote...</dd>
-            </div>
-            <div class="food-values__item">
-              <dt class="food-values__digit">8,2g</dt>
-              <dd class="food-values__name">Fats</dd>
-            </div>
-            <div class="food-values__item">
-              <dt class="food-values__digit">40,4g</dt>
-              <dd class="food-values__name">Carbs</dd>
-            </div>
-          </dl>
-
-          <h3 class="popup__table-title">Ingredients</h3>
-          <dl class="popup__ingredients-table ingredients">
-            <dt class="ingredients__name">Milk</dt>
-            <dd class="ingredients__value">100ml</dd>
-            <dt class="ingredients__name">Belgian chocolate</dt>
-            <dd class="ingredients__value">20g</dd>
-            <dt class="ingredients__name">Belgian chocolate</dt>
-            <dd class="ingredients__value">150 ml</dd>
-            <dt class="ingredients__name">Cocoa powder</dt>
-            <dd class="ingredients__value">30g</dd>
-            <dt class="ingredients__name">Sugar</dt>
-            <dd class="ingredients__value">40g</dd>
-            <dt class="ingredients__name">Vanilla sugar</dt>
-            <dd class="ingredients__value">10g</dd>
-          </dl>
-
-          <form action="#" method="post" class="popup__form form">
-            <label for="name" class="visually-hidden">Your name</label>
-            <input class="form__field" type="text" name="name" id="name" placeholder="Name">
-            <label for="phone" class="visually-hidden">Your phone</label>
-            <input class="form__field" type="text" name="phone" id="phone" placeholder="Phone" required>
-            <label for="comment" class="visually-hidden">Your comment</label>
-            <textarea class="form__field form__field--area" name="comment" id="comment" placeholder="Comment"></textarea>
-            <button class="popup__btn button" type="submit">Submit</button>
-          </form>
-        </div>
-      </div>
-
-      <!-- modal #readmore -->
-      <div class="popup popup--nojs" id="readmore">
-        <div class="popup__modal popup__modal--short-content">
-          <h2 class="popup__title popup__title--mb32">How it’s made?</h2>
-          <div class="popup__video-wrapper">
-            <video class="popup__video" src="#" poster="#" width="224" height="199"></video>
-            <button class="popup__video-play" type="button">
-              <span class="visually-hidden">Play video</span>
-              <svg width="36" height="36" focusable="false" aria-hidden="true">
-                <use xlink:href="images/sprites.svg#play"></use>
-              </svg>
-            </button>
+          <h3 class="order-card__title">ice cream</h3>
+        </li>
+        <li class="order-list__item order-card order-card--icecoffee">
+          <div class="order-card__img-wrapper medalion medalion--icecoffee">
+            <picture class="medalion__img">
+              <img src="images/products/ice-coffee.png" srcset="images/products/ice-coffee@2x.png 2x" alt="Ice coffee"
+                width="132" height="132">
+            </picture>
           </div>
-          <p class="popup__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-            ut labore et Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-            et</p>
-          <button class="popup__close close-modal" type="button">
-            <span class="visually-hidden">Close modal window</span>
-          </button>
-        </div>
-      </div>
+          <h3 class="order-card__title">ice coffee</h3>
+        </li>
+        <li class="order-list__item order-card order-card--milkshakes">
+          <div class="order-card__img-wrapper medalion medalion--milkshakes">
+            <picture class="medalion__img">
+              <img src="images/products/milkshakes.png" srcset="images/products/milkshakes@2x.png 2x" alt="Milkshakes"
+                width="132" height="132">
+            </picture>
+          </div>
+          <h3 class="order-card__title">milkshakes</h3>
+        </li>
+      </ul>
 
-      <!-- modal #locations -->
-      <div class="popup popup--nojs" id="locations">
-        <div class="popup__modal popup__modal--short-content">
-          <h2 class="popup__title popup__title--mb32">Our Locations</h2>
-          <picture>
-            <source media="(min-width: 768px" srcset="images/map-tablet.jpg 1x, images/map-tablet@2x.jpg 2x" width="448" height="260">
-            <img class="popup__image" src="images/map.jpg" srcset="images/map@2x.jpg 2x" alt="Our location" width="224"
-              height="199">
-          </picture>
-          <a class="popup__btn button" href="#">Open map</a>
-          <button class="popup__close close-modal" type="button">
-            <span class="visually-hidden">Close modal window</span>
-          </button>
-        </div>
-      </div>
-
-      <!-- modal #franchise -->
-      <div class="popup popup--nojs" id="franchise">
-        <div class="popup__modal">
-          <h2 class="popup__title popup__title--mb24">Thank you for your interest in owning an Ice Cream shop</h2>
-          <p class="popup__text">Due to the overwhelming volume of franchise requests we are not accepting new franchisee
-            applications at this time. Once the application process resumes, we will contact you for further information.
-            Please fill out the contact information below and we will reach out for additional information. We appreciate
-            your patience.</p>
-          <button class="popup__close close-modal" type="button">
-            <span class="visually-hidden">Close modal window</span>
-          </button>
-
-          <form action="#" method="post" class="popup__form popup__form--mt32  form">
-            <label for="name" class="visually-hidden">Your name</label>
-            <input class="form__field" type="text" name="name" id="name" placeholder="Name">
-            <label for="phone" class="visually-hidden">Your phone</label>
-            <input class="form__field" type="text" name="phone" id="phone" placeholder="Phone" required>
-            <label for="email" class="visually-hidden">Your e-mail</label>
-            <input class="form__field" type="email" name="email" id="email" placeholder="Email" required>
-            <label for="comment" class="visually-hidden">Your comment</label>
-            <textarea class="form__field form__field--area" name="comment" id="comment" placeholder="Comment"></textarea>
-            <button class="popup__btn button" type="submit">Submit</button>
-          </form>
-        </div>
-      </div>
+      <form action="#" method="post" class="popup__form form">
+        <label for="name" class="visually-hidden">Your name</label>
+        <input class="form__field" type="text" name="name" id="name" placeholder="Name">
+        <label for="phone" class="visually-hidden">Your phone</label>
+        <input class="form__field" type="text" name="phone" id="phone" placeholder="Phone" required>
+        <label for="comment" class="visually-hidden">Your comment</label>
+        <textarea class="form__field form__field--area" name="comment" id="comment" placeholder="Comment"></textarea>
+        <button class="popup__btn button" type="submit">Submit</button>
+      </form>
     </div>
+  </div>
+
+  <!-- modal #icecream -->
+  <div class="popup popup--nojs" id="icecream">
+    <div class="popup__modal popup__modal--ingredients">
+      <h2 class="popup__title popup__title--mb24 popup__title--ingredients">Chololate icecream</h2>
+      <button class="popup__close popup__close--ingredients close-modal close-modal--ingredients" type="button">
+        <span class="visually-hidden">Close modal window</span>
+        <svg class="close-svg" width="12" height="12" focusable="false" aria-hidden="true">
+          <use xlink:href="images/sprites.svg#close"></use>
+        </svg>
+      </button>
+      <div class="popup__medalion medalion medalion--icecream">
+        <picture class="medalion__img">
+          <img src="images/products/chocolate-icecream.jpg" srcset="images/products/chocolate-icecream@2x.jpg 2x"
+            alt="Chololate ice-cream" width="131" height="131">
+        </picture>
+      </div>
+
+      <dl class="popup__food-values food-values">
+        <div class="food-values__item">
+          <dt class="food-values__digit">320</dt>
+          <dd class="food-values__name">kcal</dd>
+        </div>
+        <div class="food-values__item">
+          <dt class="food-values__digit">4g</dt>
+          <dd class="food-values__name">Prote...</dd>
+        </div>
+        <div class="food-values__item">
+          <dt class="food-values__digit">8,2g</dt>
+          <dd class="food-values__name">Fats</dd>
+        </div>
+        <div class="food-values__item">
+          <dt class="food-values__digit">40,4g</dt>
+          <dd class="food-values__name">Carbs</dd>
+        </div>
+      </dl>
+
+      <h3 class="popup__table-title">Ingredients</h3>
+      <dl class="popup__ingredients-table ingredients">
+        <dt class="ingredients__name">Milk</dt>
+        <dd class="ingredients__value">100ml</dd>
+        <dt class="ingredients__name">Belgian chocolate</dt>
+        <dd class="ingredients__value">20g</dd>
+        <dt class="ingredients__name">Belgian chocolate</dt>
+        <dd class="ingredients__value">150 ml</dd>
+        <dt class="ingredients__name">Cocoa powder</dt>
+        <dd class="ingredients__value">30g</dd>
+        <dt class="ingredients__name">Sugar</dt>
+        <dd class="ingredients__value">40g</dd>
+        <dt class="ingredients__name">Vanilla sugar</dt>
+        <dd class="ingredients__value">10g</dd>
+      </dl>
+
+      <form action="#" method="post" class="popup__form form">
+        <label for="name" class="visually-hidden">Your name</label>
+        <input class="form__field" type="text" name="name" id="name" placeholder="Name">
+        <label for="phone" class="visually-hidden">Your phone</label>
+        <input class="form__field" type="text" name="phone" id="phone" placeholder="Phone" required>
+        <label for="comment" class="visually-hidden">Your comment</label>
+        <textarea class="form__field form__field--area" name="comment" id="comment" placeholder="Comment"></textarea>
+        <button class="popup__btn button" type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- modal #readmore -->
+  <div class="popup popup--nojs" id="readmore">
+    <div class="popup__modal popup__modal--short-content">
+      <h2 class="popup__title popup__title--mb32">How it’s made?</h2>
+      <div class="popup__video-wrapper">
+        <video class="popup__video" src="#" poster="#" width="224" height="199"></video>
+        <button class="popup__video-play" type="button">
+          <span class="visually-hidden">Play video</span>
+          <svg width="36" height="36" focusable="false" aria-hidden="true">
+            <use xlink:href="images/sprites.svg#play"></use>
+          </svg>
+        </button>
+      </div>
+      <p class="popup__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+        ut labore et Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+        et</p>
+      <button class="popup__close close-modal" type="button">
+        <span class="visually-hidden">Close modal window</span>
+        <svg class="close-svg" width="12" height="12" focusable="false" aria-hidden="true">
+          <use xlink:href="images/sprites.svg#close"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- modal #locations -->
+  <div class="popup popup--nojs" id="locations">
+    <div class="popup__modal popup__modal--short-content">
+      <h2 class="popup__title popup__title--mb32">Our Locations</h2>
+      <picture>
+        <source media="(min-width: 768px" srcset="images/map-tablet.jpg 1x, images/map-tablet@2x.jpg 2x" width="448" height="260">
+        <img class="popup__image" src="images/map.jpg" srcset="images/map@2x.jpg 2x" alt="Our location" width="224"
+          height="199">
+      </picture>
+      <a class="popup__btn button" href="#">Open map</a>
+      <button class="popup__close close-modal" type="button">
+        <span class="visually-hidden">Close modal window</span>
+        <svg class="close-svg" width="12" height="12" focusable="false" aria-hidden="true">
+          <use xlink:href="images/sprites.svg#close"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- modal #franchise -->
+  <div class="popup popup--nojs" id="franchise">
+    <div class="popup__modal">
+      <h2 class="popup__title popup__title--mb24">Thank you for your interest in owning an Ice Cream shop</h2>
+      <p class="popup__text">Due to the overwhelming volume of franchise requests we are not accepting new franchisee
+        applications at this time. Once the application process resumes, we will contact you for further information.
+        Please fill out the contact information below and we will reach out for additional information. We appreciate
+        your patience.</p>
+      <button class="popup__close close-modal" type="button">
+        <span class="visually-hidden">Close modal window</span>
+        <svg class="close-svg" width="12" height="12" focusable="false" aria-hidden="true">
+          <use xlink:href="images/sprites.svg#close"></use>
+        </svg>
+      </button>
+
+      <form action="#" method="post" class="popup__form popup__form--mt32  form">
+        <label for="name" class="visually-hidden">Your name</label>
+        <input class="form__field" type="text" name="name" id="name" placeholder="Name">
+        <label for="phone" class="visually-hidden">Your phone</label>
+        <input class="form__field" type="text" name="phone" id="phone" placeholder="Phone" required>
+        <label for="email" class="visually-hidden">Your e-mail</label>
+        <input class="form__field" type="email" name="email" id="email" placeholder="Email" required>
+        <label for="comment" class="visually-hidden">Your comment</label>
+        <textarea class="form__field form__field--area" name="comment" id="comment" placeholder="Comment"></textarea>
+        <button class="popup__btn button" type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
 
 </body>
 </html>
